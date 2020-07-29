@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" >
+          <h1>Weather Search</h1>
+          <p> Enter a city or zip code. </p> 
+          <input type="text" name="city" id="city">
+          <button id="submit">Submit</button>
+        </div>
+        <div clas="col-md-6">
+          <div class="city"></div>
+          <div class="wind"></div>
+          <div class="humidity"></div>
+          <div class="temp"></div>
+          <div class="uvIndex"></div>
+        </div>
+      </div>
+
+  <button id="city1" onclick="$('#city').val($(this).text()); $('#submit').click();">Renton</button><br>
+  <button id="city2" onclick="$('#city').val($(this).text()); $('#submit').click();">Bellevue</button><br>
+  <button id="city3" onclick="$('#city').val($(this).text()); $('#submit').click();">Bothell</button><br>
+  <button id="city4" onclick="$('#city').val($(this).text()); $('#submit').click();">Ballard</button><br>
+  <button id="city5" onclick="$('#city').val($(this).text()); $('#submit').click();">Everett</button>
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
