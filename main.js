@@ -27,7 +27,7 @@ $(document).ready(function(){
     
       //console.log(lat);
     
-    url = `http://api.openweathermap.org/data/2.5/uvi?appid=${key}&lat=${lat}&lon=${lon}`;
+    url = `https://api.openweathermap.org/data/2.5/uvi?appid=${key}&lat=${lat}&lon=${lon}`;
 
     $.ajax({
       url: url,
